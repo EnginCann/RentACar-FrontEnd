@@ -1,1 +1,11 @@
-<p>brand works!</p>
+<!-- <div *ngIf="dataLoaded==false" class="spinner-border text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div> -->
+<ul class="list-group">
+  <li (click)="setCurrnetBrand(brand)" routerLink="/cars/brand/{{brand.id}}" *ngFor="let brand of brands " [class]="getCurrnetBrandClass(brand)">{{brand.id}}-{{brand.name}}</li>
+
+  
+</ul>
+<br>
+<h5 *ngIf="currnetBrand" >{{currnetBrand.name}} seçtin</h5>
+<h5 *ngIf="currnetBrand" >{{currnetBrand.id}} seçtin</h5>
