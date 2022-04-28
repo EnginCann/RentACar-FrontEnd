@@ -10,6 +10,7 @@ import { NaviComponent } from './components/navi/navi.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { ColorComponent } from './components/color/color.component';
 import { RentalComponent } from './components/rental/rental.component';
+import { CardetailsComponent } from './components/public/cardetails/cardetails.component';
 
 
 
@@ -23,6 +24,7 @@ import { RentalComponent } from './components/rental/rental.component';
     BrandComponent,
     ColorComponent,
     RentalComponent,
+    CardetailsComponent,
   ],
   imports: [
     BrowserModule,
